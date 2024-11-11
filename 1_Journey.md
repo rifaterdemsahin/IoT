@@ -20,7 +20,6 @@ This section outlines the modifications made to various project files during the
 Here’s a Mermaid chart for the system architecture based on the provided requirements:
 
 ```mermaid
-```mermaid
 flowchart TD
     %% On-Premises / Clinic Site
     subgraph On-Premises
@@ -76,7 +75,6 @@ flowchart TD
     classDef monitoring fill:#F5B7B1,stroke:#333,stroke-width:2px;
     classDef api fill:#D7BDE2,stroke:#333,stroke-width:2px;
     classDef security fill:#FAD7A0,stroke:#333,stroke-width:2px;
-```
 ```
 
 ### Explanation
