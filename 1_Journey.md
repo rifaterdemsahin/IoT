@@ -68,13 +68,13 @@ flowchart TD
     end
 
     %% Diagram Annotations
-    classDef device fill:#EFEFEF,stroke:#333,stroke-width:2px;
-    classDef cloud fill:#D0E1F9,stroke:#333,stroke-width:2px;
-    classDef storage fill:#F9E79F,stroke:#333,stroke-width:2px;
-    classDef processing fill:#A9DFBF,stroke:#333,stroke-width:2px;
-    classDef monitoring fill:#F5B7B1,stroke:#333,stroke-width:2px;
-    classDef api fill:#D7BDE2,stroke:#333,stroke-width:2px;
-    classDef security fill:#FAD7A0,stroke:#333,stroke-width:2px;
+    classDef device fill:#EFEFEF,stroke:#333,stroke-width:2px,color:#FFFFFF;
+    classDef cloud fill:#D0E1F9,stroke:#333,stroke-width:2px,color:#FFFFFF;
+    classDef storage fill:#F9E79F,stroke:#333,stroke-width:2px,color:#FFFFFF;
+    classDef processing fill:#A9DFBF,stroke:#333,stroke-width:2px,color:#FFFFFF;
+    classDef monitoring fill:#F5B7B1,stroke:#333,stroke-width:2px,color:#FFFFFF;
+    classDef api fill:#D7BDE2,stroke:#333,stroke-width:2px,color:#FFFFFF;
+    classDef security fill:#FAD7A0,stroke:#333,stroke-width:2px,color:#FFFFFF;
 ```
 
 ### Explanation
