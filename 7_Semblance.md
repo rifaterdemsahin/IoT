@@ -1,7 +1,7 @@
 Here's the Markdown file you requested, which includes the code samples and possible errors for each component of the dialysis clinic IoT system:
 
 ```markdown
-# Dialysis Clinic IoT System Implementation
+# 🏥 Dialysis Clinic IoT System Implementation
 
 ## 1. Embedded Devices (IoT Edge Devices)
 
@@ -32,7 +32,7 @@ while True:
 
 ### Possible Errors:
 - **Error:** `ImportError: No module named 'json'`
-  - **Solution:** Ensure that the `json` module is installed, or recheck the import statement.
+  - **Solution:** Ensure that the `json` module is installed, or recheck the import statement. [Python JSON Module](https://docs.python.org/3/library/json.html)
   
 - **Error:** `TypeError: 'NoneType' object is not callable`
   - **Solution:** Ensure the function `capture_patient_data` is returning valid data before using it in the `send_data_to_gateway` function.
@@ -68,10 +68,10 @@ while True:
 
 ### Possible Errors:
 - **Error:** `ModuleNotFoundError: No module named 'azure.iot.device'`
-  - **Solution:** Install the `azure-iot-device` library using `pip install azure-iot-device`.
+  - **Solution:** Install the `azure-iot-device` library using `pip install azure-iot-device`. [Azure IoT Device SDK](https://pypi.org/project/azure-iot-device/)
 
 - **Error:** `ConnectionError: Unable to connect to IoT Hub`
-  - **Solution:** Verify the IoT Hub connection string is correct and ensure the device is properly registered with the hub.
+  - **Solution:** Verify the IoT Hub connection string is correct and ensure the device is properly registered with the hub. [Azure IoT Hub Documentation](https://docs.microsoft.com/en-us/azure/iot-hub/)
 
 ---
 
@@ -100,10 +100,10 @@ az iot hub device-identity create --hub-name <Your_IoT_Hub_Name> --device-id dev
 
 ### Possible Errors:
 - **Error:** `az: command not found`
-  - **Solution:** Ensure the Azure CLI is installed and properly configured in the system.
+  - **Solution:** Ensure the Azure CLI is installed and properly configured in the system. [Azure CLI Installation](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
 
 - **Error:** `Invalid deviceId`
-  - **Solution:** Ensure the `deviceId` is unique and adheres to the format required by Azure IoT Hub.
+  - **Solution:** Ensure the `deviceId` is unique and adheres to the format required by Azure IoT Hub. [Azure IoT Hub Device Identity](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-identity-registry)
 
 ---
 
@@ -129,10 +129,10 @@ HAVING
 
 ### Possible Errors:
 - **Error:** `Invalid function name 'TumblingWindow'`
-  - **Solution:** Verify that the syntax and function are supported in the specific version of Azure Stream Analytics.
+  - **Solution:** Verify that the syntax and function are supported in the specific version of Azure Stream Analytics. [Azure Stream Analytics Functions](https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-stream-analytics-query-patterns)
 
 - **Error:** `Query processing error`
-  - **Solution:** Check for missing or incorrect field names in the query that may not exist in the input data.
+  - **Solution:** Check for missing or incorrect field names in the query that may not exist in the input data. [Azure Stream Analytics Query Language](https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-query-language)
 
 ---
 
@@ -163,10 +163,10 @@ def upload_to_data_lake(data, file_system_name, directory_name, file_name):
 
 ### Possible Errors:
 - **Error:** `ModuleNotFoundError: No module named 'azure.storage.filedatalake'`
-  - **Solution:** Install the necessary Azure Storage libraries with `pip install azure-storage-file-datalake`.
+  - **Solution:** Install the necessary Azure Storage libraries with `pip install azure-storage-file-datalake`. [Azure Storage File Data Lake](https://pypi.org/project/azure-storage-file-datalake/)
 
 - **Error:** `FileNotFoundError: The specified file system does not exist`
-  - **Solution:** Verify that the file system name is correct and exists in Azure Data Lake.
+  - **Solution:** Verify that the file system name is correct and exists in Azure Data Lake. [Azure Data Lake Documentation](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction)
 
 ---
 
@@ -187,7 +187,7 @@ def main(event: dict) -> None:
 
 ### Possible Errors:
 - **Error:** `AttributeError: 'dict' object has no attribute 'get_body'`
-  - **Solution:** Ensure the correct format and method for retrieving the event body based on the Azure Function trigger.
+  - **Solution:** Ensure the correct format and method for retrieving the event body based on the Azure Function trigger. [Azure Functions Documentation](https://docs.microsoft.com/en-us/azure/azure-functions/)
 
 ---
 
@@ -210,7 +210,7 @@ GROUP BY
 
 ### Possible Errors:
 - **Error:** `Invalid column name 'BloodPressure'`
-  - **Solution:** Ensure that the column names are correctly spelled and exist in the database schema.
+  - **Solution:** Ensure that the column names are correctly spelled and exist in the database schema. [SQL Server Documentation](https://docs.microsoft.com/en-us/sql/sql-server/)
 
 ---
 
@@ -228,7 +228,7 @@ az monitor metrics alert create --name "HighBloodPressureAlert" \
 
 ### Possible Errors:
 - **Error:** `az monitor: error: argument --condition: invalid choice`
-  - **Solution:** Verify that the condition format is supported and correctly specified for the metric.
+  - **Solution:** Verify that the condition format is supported and correctly specified for the metric. [Azure Monitor Documentation](https://docs.microsoft.com/en-us/azure/azure-monitor/)
 
 ---
 
@@ -249,7 +249,7 @@ az monitor metrics alert create --name "HighBloodPressureAlert" \
 
 ### Possible Errors:
 - **Error:** `Invalid JSON format`
-  - **Solution:** Ensure the JSON structure is valid and conforms to the API Management schema.
+  - **Solution:** Ensure the JSON structure is valid and conforms to the API Management schema. [Azure API Management Documentation](https://docs.microsoft.com/en-us/azure/api-management/)
 
 ---
 
@@ -285,7 +285,7 @@ az policy assignment create --policy "<Policy_Definition_ID>" --resource-group "
 
 ### Possible Errors:
 - **Error:** `az: error: argument --policy: expected one argument`
-  - **Solution:** Ensure that the policy definition ID is provided correctly.
+  - **Solution:** Ensure that the policy definition ID is provided correctly. [Azure Policy Documentation](https://docs.microsoft.com/en-us/azure/governance/policy/)
 
 ---
 
@@ -316,8 +316,7 @@ az policy assignment create --policy "<Policy_Definition_ID>" --resource-group "
 
 ### Possible Errors:
 - **Error:** `Unclosed tag`
-  - **Solution:** Ensure all HTML tags are properly closed.
+  - **Solution:** Ensure all HTML tags are properly closed. [HTML Documentation](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
 ---
-
-
+```

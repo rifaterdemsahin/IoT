@@ -1,11 +1,11 @@
-Below is a markdown file containing sample code pieces for implementing each component of the dialysis clinic IoT system, based on the prompts provided.
+Below is a markdown file containing sample code pieces for implementing each component of the dialysis clinic IoT system, based on the prompts provided. 🌐
 
 ---
 
 ```markdown
-# Dialysis Clinic IoT System Implementation
+# Dialysis Clinic IoT System Implementation 🏥
 
-## 1. Embedded Devices (IoT Edge Devices)
+## 1. Embedded Devices (IoT Edge Devices) 📟
 
 ```python
 # Sample code for setting up an IoT device to capture patient data and send it to the IoT Gateway
@@ -32,7 +32,7 @@ while True:
 
 ---
 
-## 2. IoT Gateway
+## 2. IoT Gateway 🌉
 
 ```python
 # Sample code to process and transmit data from multiple devices to Azure IoT Hub
@@ -59,7 +59,7 @@ while True:
 
 ---
 
-## 3. Azure IoT Hub
+## 3. Azure IoT Hub ☁️
 
 ```json
 // JSON template for device provisioning
@@ -82,7 +82,7 @@ az iot hub device-identity create --hub-name <Your_IoT_Hub_Name> --device-id dev
 
 ---
 
-## 4. Azure Stream Analytics
+## 4. Azure Stream Analytics 📊
 
 ```sql
 -- SQL query for real-time data filtering and anomaly detection
@@ -102,7 +102,7 @@ HAVING
 
 ---
 
-## 5. Data Storage (Azure Data Lake / Cosmos DB / SQL Database)
+## 5. Data Storage (Azure Data Lake / Cosmos DB / SQL Database) 💾
 
 ```sql
 -- SQL code to create a table for structured data storage in Azure SQL Database
@@ -127,7 +127,7 @@ def upload_to_data_lake(data, file_system_name, directory_name, file_name):
 
 ---
 
-## 6. Azure Functions (Serverless Logic)
+## 6. Azure Functions (Serverless Logic) ⚙️
 
 ```python
 # Azure Function to create orders automatically based on patient metrics
@@ -142,7 +142,7 @@ def main(event: dict) -> None:
 
 ---
 
-## 7. Power BI / Azure Synapse Analytics
+## 7. Power BI / Azure Synapse Analytics 📈
 
 ```sql
 -- SQL code for querying aggregated data for Power BI dashboards
@@ -159,7 +159,7 @@ GROUP BY
 
 ---
 
-## 8. Azure Monitor & Alerts
+## 8. Azure Monitor & Alerts 🚨
 
 ```bash
 # Azure CLI command to create an alert rule
@@ -171,7 +171,7 @@ az monitor metrics alert create --name "HighBloodPressureAlert" \
 
 ---
 
-## 9. Azure API Management
+## 9. Azure API Management 🌐
 
 ```json
 // JSON policy for rate limiting in Azure API Management
@@ -186,7 +186,7 @@ az monitor metrics alert create --name "HighBloodPressureAlert" \
 
 ---
 
-## 10. Security and Compliance (Azure Policy / Azure Active Directory)
+## 10. Security and Compliance (Azure Policy / Azure Active Directory) 🔒
 
 ```json
 // Azure Policy for enforcing encryption at rest
@@ -216,7 +216,7 @@ az policy assignment create --policy "<Policy_Definition_ID>" --resource-group "
 
 ---
 
-## 11. User Interface and Experience Design
+## 11. User Interface and Experience Design 🎨
 
 ```html
 <!-- Sample HTML interface for clinicians to view patient data -->
@@ -241,7 +241,7 @@ az policy assignment create --policy "<Policy_Definition_ID>" --resource-group "
 
 ---
 
-## 12. System Integration and Testing
+## 12. System Integration and Testing 🧪
 
 ```python
 # Example test case to verify data transmission from IoT device to IoT Hub
@@ -253,5 +253,6 @@ def test_data_transmission():
 
 ---
 
-These code samples provide an initial framework for implementing each component in the dialysis clinic IoT system. They should be customized and expanded according to specific project needs.
+These code samples provide an initial framework for implementing each component in the dialysis clinic IoT system. They should be customized and expanded according to specific project needs. For more information, visit [Azure IoT Documentation](https://docs.microsoft.com/en-us/azure/iot-hub/).
 ```
+

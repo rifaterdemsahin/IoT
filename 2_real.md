@@ -59,3 +59,13 @@ Here’s an Objective and Key Results (OKR) breakdown with each part of the syst
 ---
 
 These OKRs provide a measurable roadmap to build, secure, and maintain the dialysis clinic’s IoT-based Azure system. Each objective aligns with key requirements for security, real-time monitoring, and compliance, guiding the project through to successful deployment and operation.
+
+For more information, refer to the following resources:
+- [Azure IoT Hub Documentation](https://docs.microsoft.com/en-us/azure/iot-hub/)
+- [Azure Stream Analytics Documentation](https://docs.microsoft.com/en-us/azure/stream-analytics/)
+- [Azure Functions Documentation](https://docs.microsoft.com/en-us/azure/azure-functions/)
+- [Power BI Documentation](https://docs.microsoft.com/en-us/power-bi/)
+- [Azure Monitor Documentation](https://docs.microsoft.com/en-us/azure/azure-monitor/)
+- [Azure API Management Documentation](https://docs.microsoft.com/en-us/azure/api-management/)
+- [Azure AD Documentation](https://docs.microsoft.com/en-us/azure/active-directory/)
+
