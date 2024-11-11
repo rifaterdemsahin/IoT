@@ -13,8 +13,10 @@ Documentation for the Folder Structure
 
 Practical Terminal Commands From Your Workstation
 
-chmod +x /workspaces/containerports/4_Symbols/git_push.sh
-/workspaces/containerports/4_Symbols/git_push.sh "local push"
+git pull; git add . && git commit -m "local" && git push&&clear.exe
+
+
+git pull; git add . ; git commit -m "local" ; git push;clear
 
 
 ## License
