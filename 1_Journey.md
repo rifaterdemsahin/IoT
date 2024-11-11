@@ -22,59 +22,59 @@ Here’s a Mermaid chart for the system architecture based on the provided requi
 ```mermaid
 flowchart TD
     %% On-Premises / Clinic Site
-    subgraph On-Premises
-        A1[IoT Edge Devices]:::device
-        A2[IoT Gateway]:::device
-        A1 --> A2
-    end
+        subgraph On-Premises
+            A1[IoT Edge Devices]:::device
+            A2[IoT Gateway]:::device
+            A1 --> A2
+        end
 
-    %% Azure Cloud
-    subgraph Azure Cloud
-        A2 --> B1[Azure IoT Hub]:::cloud
-        B1 --> B2[Azure Stream Analytics]:::cloud
-        B1 --> B3[Device Management]:::cloud
-        B1 --> B4[Security & Authentication]:::cloud
-    end
+        %% Azure Cloud
+        subgraph Azure Cloud
+            A2 --> B1[Azure IoT Hub]:::cloud
+            B1 --> B2[Azure Stream Analytics]:::cloud
+            B1 --> B3[Device Management]:::cloud
+            B1 --> B4[Security & Authentication]:::cloud
+        end
 
-    %% Data Storage
-    subgraph Data Storage
-        B2 --> C1[Azure Data Lake / Cosmos DB / SQL Database]:::storage
-        C1 --> C2[Data Retention & Compliance]:::storage
-    end
+        %% Data Storage
+        subgraph Data Storage
+            B2 --> C1[Azure Data Lake / Cosmos DB / SQL Database]:::storage
+            C1 --> C2[Data Retention & Compliance]:::storage
+        end
 
-    %% Processing and Analytics
-    subgraph Processing and Analytics
-        B2 --> D1[Azure Functions]:::processing
-        D1 --> D2[Order Management System]:::processing
-        C1 --> E1[Power BI / Synapse Analytics]:::processing
-    end
+        %% Processing and Analytics
+        subgraph Processing and Analytics
+            B2 --> D1[Azure Functions]:::processing
+            D1 --> D2[Order Management System]:::processing
+            C1 --> E1[Power BI / Synapse Analytics]:::processing
+        end
 
-    %% Monitoring and Alerts
-    subgraph Monitoring and Alerts
-        B1 --> F1[Azure Monitor]:::monitoring
-        F1 --> F2[Real-Time Alerts for Medical Staff]:::monitoring
-    end
+        %% Monitoring and Alerts
+        subgraph Monitoring and Alerts
+            B1 --> F1[Azure Monitor]:::monitoring
+            F1 --> F2[Real-Time Alerts for Medical Staff]:::monitoring
+        end
 
-    %% API Management
-    subgraph API Management
-        E1 --> G1[Azure API Management]:::api
-        G1 --> G2[External Systems / Patient Portals]:::api
-    end
+        %% API Management
+        subgraph API Management
+            E1 --> G1[Azure API Management]:::api
+            G1 --> G2[External Systems / Patient Portals]:::api
+        end
 
-    %% Security and Compliance Layer
-    subgraph Security and Compliance
-        C1 --> H1[Azure Active Directory]:::security
-        C1 --> H2[Azure Policy - HIPAA / GDPR Compliance]:::security
-    end
+        %% Security and Compliance Layer
+        subgraph Security and Compliance
+            C1 --> H1[Azure Active Directory]:::security
+            C1 --> H2[Azure Policy - HIPAA / GDPR Compliance]:::security
+        end
 
-    %% Diagram Annotations
-    classDef device fill:#EFEFEF,stroke:#333,stroke-width:2px,color:#FFFFFF;
-    classDef cloud fill:#D0E1F9,stroke:#333,stroke-width:2px,color:#FFFFFF;
-    classDef storage fill:#F9E79F,stroke:#333,stroke-width:2px,color:#FFFFFF;
-    classDef processing fill:#A9DFBF,stroke:#333,stroke-width:2px,color:#FFFFFF;
-    classDef monitoring fill:#F5B7B1,stroke:#333,stroke-width:2px,color:#FFFFFF;
-    classDef api fill:#D7BDE2,stroke:#333,stroke-width:2px,color:#FFFFFF;
-    classDef security fill:#FAD7A0,stroke:#333,stroke-width:2px,color:#FFFFFF;
+        %% Diagram Annotations
+        classDef device fill:#FF5733,stroke:#333,stroke-width:2px,color:#FFFFFF;
+        classDef cloud fill:#33FF57,stroke:#333,stroke-width:2px,color:#FFFFFF;
+        classDef storage fill:#3357FF,stroke:#333,stroke-width:2px,color:#FFFFFF;
+        classDef processing fill:#FF33A1,stroke:#333,stroke-width:2px,color:#FFFFFF;
+        classDef monitoring fill:#33FFF5,stroke:#333,stroke-width:2px,color:#FFFFFF;
+        classDef api fill:#F5FF33,stroke:#333,stroke-width:2px,color:#FFFFFF;
+        classDef security fill:#FF33F5,stroke:#333,stroke-width:2px,color:#FFFFFF;
 ```
 
 ### Explanation
