@@ -38,7 +38,7 @@ flowchart TD
 
     %% Processing and Analytics
     B2 --> D1[Azure Functions]
-    D1 --> D2[Order Management System (OMS)]
+    D1 --> D2[Order Management System]
     C1 --> E1[Power BI / Synapse Analytics]
 
     %% Monitoring and Alerts
@@ -50,7 +50,7 @@ flowchart TD
     G1 --> G2[External Systems / Patient Portals]
 
     %% Security and Compliance Layer
-    C1 --> H1[Azure Active Directory (AAD)]
+    C1 --> H1[Azure Active Directory]
     C1 --> H2[Azure Policy - HIPAA / GDPR Compliance]
 
     %% Diagram Annotations
