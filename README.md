@@ -3,7 +3,7 @@
 Documentation for the Folder Structure
 | Section             | Description                                                                                                               | Action              |
 |---------------------|---------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
-| **🚀 Journey**      | *Visual Story Explained with Steps* - A self-learning guide from beginner to skilled in visual storytelling.              | Feel it |
+| **🚀 Journey**      | *Visual Story Explained with Steps* - A self-learning guide from beginner to skilled in visual storytelling by references to artifacts.              | Feel it |
 | **🌍 Real**         | *The Job That Starts with Objective and Key Results* - Sets goals and objectives, aligning tasks with measurable results. | Aim at it   |
 | **🌳 Environments** | *The Roadmap and Use Cases* - A roadmap with learning modules and real-world use cases to apply new skills.            | Create it |
 | **🌌 UserInterfaces**| *What You Learn on the Road With Visuals* - Tracks concepts, theories, and skills acquired, promoting continuous growth.            | Imagine it |
