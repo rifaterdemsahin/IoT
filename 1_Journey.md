@@ -20,42 +20,63 @@ This section outlines the modifications made to various project files during the
 Here’s a Mermaid chart for the system architecture based on the provided requirements:
 
 ```mermaid
+```mermaid
 flowchart TD
     %% On-Premises / Clinic Site
-    A1[IoT Edge Devices]
-    A2[IoT Gateway]
-    A1 --> A2
+    subgraph On-Premises
+        A1[IoT Edge Devices]:::device
+        A2[IoT Gateway]:::device
+        A1 --> A2
+    end
 
     %% Azure Cloud
-    A2 --> B1[Azure IoT Hub]
-    B1 --> B2[Azure Stream Analytics]
-    B1 --> B3[Device Management]
-    B1 --> B4[Security & Authentication]
+    subgraph Azure Cloud
+        A2 --> B1[Azure IoT Hub]:::cloud
+        B1 --> B2[Azure Stream Analytics]:::cloud
+        B1 --> B3[Device Management]:::cloud
+        B1 --> B4[Security & Authentication]:::cloud
+    end
 
     %% Data Storage
-    B2 --> C1[Azure Data Lake / Cosmos DB / SQL Database]
-    C1 --> C2[Data Retention & Compliance]
+    subgraph Data Storage
+        B2 --> C1[Azure Data Lake / Cosmos DB / SQL Database]:::storage
+        C1 --> C2[Data Retention & Compliance]:::storage
+    end
 
     %% Processing and Analytics
-    B2 --> D1[Azure Functions]
-    D1 --> D2[Order Management System]
-    C1 --> E1[Power BI / Synapse Analytics]
+    subgraph Processing and Analytics
+        B2 --> D1[Azure Functions]:::processing
+        D1 --> D2[Order Management System]:::processing
+        C1 --> E1[Power BI / Synapse Analytics]:::processing
+    end
 
     %% Monitoring and Alerts
-    B1 --> F1[Azure Monitor]
-    F1 --> F2[Real-Time Alerts for Medical Staff]
+    subgraph Monitoring and Alerts
+        B1 --> F1[Azure Monitor]:::monitoring
+        F1 --> F2[Real-Time Alerts for Medical Staff]:::monitoring
+    end
 
     %% API Management
-    E1 --> G1[Azure API Management]
-    G1 --> G2[External Systems / Patient Portals]
+    subgraph API Management
+        E1 --> G1[Azure API Management]:::api
+        G1 --> G2[External Systems / Patient Portals]:::api
+    end
 
     %% Security and Compliance Layer
-    C1 --> H1[Azure Active Directory]
-    C1 --> H2[Azure Policy - HIPAA / GDPR Compliance]
+    subgraph Security and Compliance
+        C1 --> H1[Azure Active Directory]:::security
+        C1 --> H2[Azure Policy - HIPAA / GDPR Compliance]:::security
+    end
 
     %% Diagram Annotations
     classDef device fill:#EFEFEF,stroke:#333,stroke-width:2px;
-    class A1,A2,B1,B2,B3,B4,C1,C2,D1,D2,E1,F1,F2,G1,G2,H1,H2 device;
+    classDef cloud fill:#D0E1F9,stroke:#333,stroke-width:2px;
+    classDef storage fill:#F9E79F,stroke:#333,stroke-width:2px;
+    classDef processing fill:#A9DFBF,stroke:#333,stroke-width:2px;
+    classDef monitoring fill:#F5B7B1,stroke:#333,stroke-width:2px;
+    classDef api fill:#D7BDE2,stroke:#333,stroke-width:2px;
+    classDef security fill:#FAD7A0,stroke:#333,stroke-width:2px;
+```
 ```
 
 ### Explanation
